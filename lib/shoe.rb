@@ -1,18 +1,23 @@
 # Make your shoe class here!
 # the :: it indicates "name spacing". In other words, it tells us that the thing on the right side of the colons is a thing defined within the context, or name space, of the thing on the left side of the colons.
 
-#class Shoe 
- # attr_accessor :brand, :color, :size, :material, :condition
- # attr_reader :shoe
- 
- # def initialize(shoe)
- #   @shoe = shoe
-#  end
-#end
-
-
 class Shoe
-  def initialize(shoe)
+  attr_accessor :color, :size, :material, :condition
+  attr_reader :brand
+
+  def initialize(brand)
+    @brand = brand
+  end
+
+  def cobble
+    puts "Your shoe is as good as new!"
+    @condition= "new"
+  end
+end
+
+
+#class Shoe
+#  def initialize(shoe)
     @shoe = shoe 
     @brand = brand 
   end
